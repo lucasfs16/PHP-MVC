@@ -1,0 +1,53 @@
+Exercicio: Criar a rota /operacao/num1/num2
+
+Onde operacao pode ser soma, mult, subtracao e divisao
+
+O controller deve se chamar Calculadora.
+
+SOLUÇÃO do PROF:
+
+1- criar novo arquivo php na pasta controller "calculadora.php":
+    
+    class Calculadora extends CI_Controller {
+ 
+        public function operacao($oper,$n1,$n2){
+                //O INDICE DE data vira VARIAVEL NA view.
+                
+            $data["res"] = 0;
+            if($oper == "soma"){
+                $data["res"] = $n1 + $n2;    
+            }
+            if($oper == "sub"){
+                $data["res"] = $n1 - $n2;    
+            }
+            if($oper == "mult"){
+                $data["res"] = $n1 * $n2;    
+            }
+            $this->load->view('calc',$data);
+            
+        }
+       
+}
+    
+
+2- na pasta config >> arq "routes.php" - adicionar:
+
+...
+$route['operacao/(:any)/(:num)/(:num)'] = 'calculadora/operacao/$1/$2/$3';
+...
+
+3- cria novo arquivo php para o frontend - calc.php:
+
+
+<!DOCTYPE html>
+<html>
+    <body>
+        <h1> O RESULTADO EH: <?= $res ?></h1>
+    </body>
+</html>
+
+
+4 - TESTE:
+
+url/operacao/soma/1/3
+

@@ -1,0 +1,16 @@
+[31-Oct-2017 18:40:53 UTC] PHP Fatal error:  Call to a member function insert() on a non-object in /home/ubuntu/workspace/CI/application/controllers/Aluno.php on line 22
+[31-Oct-2017 18:40:53 UTC] PHP Stack trace:
+[31-Oct-2017 18:40:53 UTC] PHP   1. {main}() /home/ubuntu/workspace/CI/index.php:0
+[31-Oct-2017 18:40:53 UTC] PHP   2. require_once() /home/ubuntu/workspace/CI/index.php:315
+[31-Oct-2017 18:40:53 UTC] PHP   3. call_user_func_array:{/home/ubuntu/workspace/CI/system/core/CodeIgniter.php:532}() /home/ubuntu/workspace/CI/system/core/CodeIgniter.php:532
+[31-Oct-2017 18:40:53 UTC] PHP   4. Aluno->cadastrar() /home/ubuntu/workspace/CI/system/core/CodeIgniter.php:532
+[31-Oct-2017 18:42:09 UTC] PHP Fatal error:  Call to a member function insert() on a non-object in /home/ubuntu/workspace/CI/application/controllers/Aluno.php on line 22
+[31-Oct-2017 18:42:09 UTC] PHP Stack trace:
+[31-Oct-2017 18:42:09 UTC] PHP   1. {main}() /home/ubuntu/workspace/CI/index.php:0
+[31-Oct-2017 18:42:09 UTC] PHP   2. require_once() /home/ubuntu/workspace/CI/index.php:315
+[31-Oct-2017 18:42:09 UTC] PHP   3. call_user_func_array:{/home/ubuntu/workspace/CI/system/core/CodeIgniter.php:532}() /home/ubuntu/workspace/CI/system/core/CodeIgniter.php:532
+[31-Oct-2017 18:42:09 UTC] PHP   4. Aluno->cadastrar() /home/ubuntu/workspace/CI/system/core/CodeIgniter.php:532
+[31-Oct-2017 19:29:33 UTC] PHP Fatal error:  Cannot redeclare Welcome::ola() in /home/ubuntu/workspace/CI/application/controllers/Welcome.php on line 32
+[31-Oct-2017 19:29:33 UTC] PHP Stack trace:
+[31-Oct-2017 19:29:33 UTC] PHP   1. {main}() /home/ubuntu/workspace/CI/index.php:0
+[31-Oct-2017 19:29:33 UTC] PHP   2. require_once() /home/ubuntu/workspace/CI/index.php:315
